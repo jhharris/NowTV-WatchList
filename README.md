@@ -1,4 +1,4 @@
-####NowTV WatchList service Implementation
+#### NowTV WatchList service Implementation
 
 ##### Jason Hodges-Harris
 jasonhh@mac.com
@@ -9,6 +9,9 @@ jasonhh@mac.com
    * sbt clean compile run
 * Server will run on port 8080
 
+##### Run Test Suite
+* From the project directory
+   * sbt clean test
     
 ##### Example REST requests
 
