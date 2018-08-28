@@ -14,22 +14,27 @@
 
 **All requests use the path: /watchlist/{customerId}**
 
+
 *To retrieve the watchlist for a customer*
 
-**GET** http://localhost:8080/watchlist/{customerId}
+**GET** 
+
+curl -X GET http://localhost:8080/watchlist/12345
+
 
 *To add a contentID to a customer's watchlist*
 
-**PUT** http://localhost:8080/watchlist/{customerId}
-* Headers: Content-Type application/json
-* Request body: { "contentId" : "11111"}  
+**PUT** 
+
+curl -X PUT -H "Content-Type: application/json" -d '{"contentId":"11111"}' http://localhost:8080/watchlist/12345
+
 
 *To delete a contentId from a customer's watchlist*
 
-**DELETE** http://localhost:8080/watchlist/{customerId}
-* Headers: Content-Type application/json
-* Request body: { "contentId" : "11111"} 
+**DELETE** 
 
+ curl -X DELETE -H "Content-Type: application/json" -d '{"contentId":"11111"}' http://localhost:8080/watchlist/12345
+ 
 
 ##### Assumptions
 * Service URL path is /watchlist/{customerId}
