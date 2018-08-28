@@ -1,8 +1,5 @@
 #### NowTV WatchList service Implementation
 
-##### Jason Hodges-Harris
-jasonhh@mac.com
-
 ##### Run Service
 
 * From the project directory
